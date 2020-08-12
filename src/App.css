@@ -1,38 +1,248 @@
-.App {
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  background-color: #5e5ed4;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 49px;
+  font-family: "Creepster", cursive;
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-left: 60px;
+}
+form {
+  width: 20%;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app {
   text-align: center;
+  background: #efecec;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app input {
+  font-size: 18px;
+  padding: 5px 15px;
+  color: #3b3a3a;
+  width: 33%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app button {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  margin-left: 5px;
+  background-color: #22ae40;
+  color: black;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.results {
+  text-align: left;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.left-section {
+  float: left;
+  width: 100%;
+  margin-left: 6px;
+  /* padding: 0 10px; */
+  vertical-align: top;
+  background: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  position: relative;
+  margin-right: 6px;
+}
+.left-section div .launch-filter {
+  padding: 2px 15px;
+  background-color: #9ad49c;
+  margin: 5px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  color: black;
+}
+.active {
+  background: green;
+  padding: 2px 15px;
+  margin: 5px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  color: black;
+}
+.left-section h3 {
+  margin-left: 16px;
+}
+.year-filter {
+  text-align: center;
+    display: block;
+    color: #000000;
+}
+.results ul li {
+  float: left;
+  width: 24%;
+  margin-right: 6px;
+  vertical-align: top;
+  background: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  position: relative;
+}
+.results ul {
+  list-style-type: none;
+  background: #efecec;
+  width: 80%;
+  padding-left: 22px;
+}
+.img-section {
+  background-color: #efecec;
+  margin: 20px;
+  padding: 16px;
+}
+.results ul:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.App-link {
-  color: #61dafb;
+.results ul li .name {
+  display: block;
+  text-align: center;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.results a img {
+  object-fit: scale-down;
+  width: 100%;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+.left-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 18px 15px 18px;
+  color: #000000;
+}
+.left-main span:nth-child(2) {
+  color: #27519c;
+}
+.top-main {
+  padding-left: 16px;
+  color: #5e5ed4;
+}
+.main-heading img {
+  height: 100%;
+  width: 100%;
+}
+.bottom-main {
+  padding-bottom: 20px;
+}
+.name-heading {
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.origin {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+hr {
+    color: gray;
+    background-color: #565555;
+    border-width: 0px;
+    height: 1px;
+    width: 87%;
   }
-  to {
-    transform: rotate(360deg);
+  form img {
+    height: 15px;
+    width: 15px;
   }
+  form span {
+      margin-left: 10px;
+      color: white;
+  }
+  select {
+    padding: 5px;
+    margin-left: 10px;
+    background: #4eaf40;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  .sorting {
+      display: inline-flex;
+  }
+@media screen and (max-width: 480px) {
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .results ul {
+    width: 95%;
+  }
+  hr {
+    width: 90%;
+  }
+  header h1 {
+    margin-left: 45px;
+    font-size: 32px;
+    padding: 10px 25px;
+  }
+  .origin {
+    width: 45%;
+  }
+  h2.name-heading {
+    margin: 4px 0px;
+    font-size: 20px;
+  }
+  ul {
+    padding: 0px 15px;
+    margin-top: 0px;
+  }
+  .left-main {
+    padding: 0px 16px 6px 16px;
+  }
+  .results ul li {
+    width: 100%;
+    display: block;
+  }
+  .sorting {
+    display: flex;
+    margin-top: 20px;
+  }
+  .app input {
+      width: 50%;
+  }
+  form {
+    width: 96%;
+  }
+  .top-main {
+    padding-left: 16px;
+  }
+  .left-section {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 768px) {
+    .app input {
+        width: 55%;
+    }
+      .name-heading {
+        margin: 0px;
+      }
 }
